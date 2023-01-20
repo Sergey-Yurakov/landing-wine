@@ -1,0 +1,15 @@
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    height: 100%;
+    line-height: 20px;
+    font-weight: 500;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    border: none;
+}

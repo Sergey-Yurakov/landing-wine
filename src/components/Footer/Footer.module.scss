@@ -1,0 +1,65 @@
+@import '../../scss/customSetings';
+
+.footer {
+    background-color: $color-998431;
+    padding: 50px 0;
+
+    @media screen and (max-width: $media-480) {
+        padding: 30px 16px;
+    }
+
+    &__container {
+        max-width: $max-width;
+        margin: 0 auto;
+    }
+
+    &__bottomBlock {
+        border-top: 1px solid $color-ffffff;
+        border-bottom: 1px solid $color-ffffff;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+
+        & ul {
+            padding: 0;
+            margin: 0;
+            height: 59px;
+            text-align: center;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            @media screen and (max-width: $media-480) {
+                height: auto;
+                padding: 10px 0;
+                gap: 15px;
+            }
+        }
+
+        & li {
+            border-right: 1px solid $color-ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease-in;
+
+            &:last-child {
+                border: none;
+            }
+
+            @media screen and (max-width: $media-480) {
+                border-right: none;
+            }
+
+            &:hover {
+                background: #6d5f1a;
+            }
+        }
+
+        & a {
+            color: $color-ffffff;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../scss/customSetings.scss';
+
+.contacts {
+    max-width: $max-width;
+    margin: 0 auto;
+    transition: all 0.3s ease-in;
+
+    @media screen and (max-width: $media-480) {
+        padding: 30px 16px;
+    }
+
+    &__title {
+        text-align: center;
+        animation: text 1s ease-in-out;
+    }
+
+    &__body {
+        display: flex;
+        gap: 100px;
+        margin-bottom: 30px;
+        animation: text 1s ease-in-out;
+
+        @media screen and (max-width: $media-480) {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__map {
+            margin-top: 30px;
+            @media screen and (max-width: $media-480) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    @keyframes text {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

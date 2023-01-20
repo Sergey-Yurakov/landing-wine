@@ -1,0 +1,30 @@
+.catalog {
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 30px;
+        &__wrap {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+            padding: 0 15px;
+            transition: all 0.3s ease-in;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+                transition: box-shadow 0.5s, transform 0.5s;
+            }
+        }
+
+        &__image {
+            display: flex;
+            align-items: center;
+        }
+
+        &__container span {
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+}

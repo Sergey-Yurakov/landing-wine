@@ -1,0 +1,71 @@
+@import '../../scss/customSetings';
+
+.header {
+    height: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    background: url('../../images/bgc.png') no-repeat;
+    background-size: cover;
+    animation: text 1s ease-in-out;
+
+    @media screen and (max-width: $media-480) {
+        height: 100vh;
+        background-position: center center;
+    }
+
+    &__container {
+        padding-top: 30px;
+        max-width: $max-width;
+        margin: 0 auto;
+        z-index: 10;
+        position: relative;
+        height: 80%;
+    }
+
+    &__inner {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 30px;
+        height: 100%;
+
+        @media screen and (max-width: $media-480) {
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        &__linkWrapper {
+            width: 203px;
+            height: 50px;
+            background: #99862a;
+            display: grid;
+            place-content: center;
+            transition: all 0.3s ease-in;
+
+            &:hover {
+                background: #6d5f1a;
+            }
+        }
+    }
+
+    @keyframes text {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

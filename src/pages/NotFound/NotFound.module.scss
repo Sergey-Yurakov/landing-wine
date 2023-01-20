@@ -1,0 +1,12 @@
+@import '../../scss/customSetings.scss';
+
+.notFound {
+    max-width: $max-width;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media screen and (max-width: $media-480) {
+        padding: 30px 16px;
+    }
+}

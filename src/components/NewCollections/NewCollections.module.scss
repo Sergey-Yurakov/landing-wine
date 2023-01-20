@@ -1,0 +1,135 @@
+@import '../../scss/customSetings';
+
+.newCollections {
+    background-color: $color-E6E3C4;
+    color: $color-282828;
+
+    &__outherContainer {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 80px 0;
+
+        @media screen and (max-width: $media-480) {
+            padding: 30px 16px;
+            max-width: 100%;
+        }
+    }
+    &__innerContainer {
+        border-top: 1px solid $color-998431;
+        border-bottom: 1px solid $color-998431;
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: $media-480) {
+            display: block;
+            padding: 30px 0;
+        }
+    }
+    &__info {
+        max-width: 450px;
+    }
+    &__new {
+        font-size: 16px;
+    }
+    &__title {
+        position: relative;
+
+        @media screen and (max-width: $media-480) {
+            text-align: center;
+        }
+
+        &__top {
+            margin: 30px 0 10px 0;
+
+            @media screen and (max-width: $media-480) {
+                margin: 15px 0 10px 0;
+            }
+        }
+        &__bottom {
+            margin: 0 0 60px 0;
+
+            @media screen and (max-width: $media-480) {
+                margin: 0 0 30px 0;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: $color-282828;
+                width: 160px;
+                height: 1px;
+                bottom: -36px;
+
+                @media screen and (max-width: $media-480) {
+                    content: '';
+                    position: absolute;
+                    background-color: $color-282828;
+                    width: 160px;
+                    height: 1px;
+                    bottom: -18px;
+                    left: 33%;
+                }
+            }
+        }
+    }
+    &__descriptions {
+        margin: 30px 0;
+    }
+    &__table {
+        & h3 {
+            margin: 10px 0 0 0;
+        }
+
+        & p {
+            margin: 5px 0 15px 0;
+        }
+
+        & > table {
+            border-collapse: collapse;
+            border-style: hidden;
+        }
+
+        & td {
+            border: 0.5px solid $color-282828;
+            padding: 5px 25px;
+        }
+    }
+
+    &__linkWrapper {
+        @media screen and (max-width: $media-480) {
+            text-align: center;
+            margin: 0 auto 15px auto;
+        }
+
+        width: 254px;
+        height: 50px;
+        background: #99862a;
+        display: grid;
+        place-content: center;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            background: #6d5f1a;
+        }
+    }
+
+    &__images {
+        & img {
+            @media screen and (max-width: $media-480) {
+                width: 100%;
+            }
+        }
+
+        &__row {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+
+            @media screen and (max-width: $media-480) {
+                gap: 15px;
+                margin-top: 15px;
+            }
+        }
+    }
+}

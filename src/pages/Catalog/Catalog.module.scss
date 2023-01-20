@@ -1,0 +1,43 @@
+@import '../../scss/customSetings.scss';
+
+.catalog {
+    max-width: $max-width;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    animation: text 1s ease-in-out;
+
+    @media screen and (max-width: $media-480) {
+        padding: 30px 16px;
+    }
+
+    &__sort {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+
+        & input,
+        select {
+            padding-bottom: 10px;
+        }
+
+        & input::placeholder {
+            opacity: 1;
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    @keyframes text {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

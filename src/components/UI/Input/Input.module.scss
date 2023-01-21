@@ -1,7 +1,11 @@
 @import '../../../scss/customSetings.scss';
 
 .input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid $color-282828;
+    display: flex;
+
+    &__content {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $color-282828;
+    }
 }

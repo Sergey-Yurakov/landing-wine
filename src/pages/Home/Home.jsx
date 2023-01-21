@@ -1,12 +1,11 @@
+import Header from '@components/Header/Header';
+import Loader from '@components/Loader/Loader';
+import '@scss/base.scss';
 import { Suspense, lazy } from 'react';
 
-import Header from '../../components/Header/Header';
-import Loader from '../../components/Loader/Loader';
-import '../../scss/base.scss';
-
-const LazyForm = lazy(() => import('../../components/Form/Form'));
-const LazyNewCollections = lazy(() => import('../../components/NewCollections/NewCollections'));
-const LazyDescriptions = lazy(() => import('../../components/Descriptions/Descriptions'));
+const LazyForm = lazy(() => import('@components/Form/Form'));
+const LazyNewCollections = lazy(() => import('@components/NewCollections/NewCollections'));
+const LazyDescriptions = lazy(() => import('@components/Descriptions/Descriptions'));
 
 const Home = () => {
     return (

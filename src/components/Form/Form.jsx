@@ -1,10 +1,10 @@
+import ModalWindow from '@components/ModalWindow/ModalWindow';
+import barrel from '@images/barrel.svg';
+import grape from '@images/grape.svg';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Tooltip } from 'react-tooltip';
 
-import barrel from '../../images/barrel.svg';
-import grape from '../../images/grape.svg';
-import ModalWindow from '../ModalWindow/ModalWindow';
 import cl from './Form.module.scss';
 
 const Form = () => {

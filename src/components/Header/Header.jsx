@@ -1,4 +1,5 @@
-import Link from '../UI/Link/Link';
+import Link from '@components/UI/Link/Link';
+
 import cl from './Header.module.scss';
 
 const Header = () => {

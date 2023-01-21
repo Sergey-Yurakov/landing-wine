@@ -1,4 +1,5 @@
-import YandexMap from '../../components/YandexMap/YandexMap';
+import YandexMap from '@components/YandexMap/YandexMap';
+
 import cl from './Contacts.module.scss';
 
 const Contacts = () => {

@@ -1,4 +1,5 @@
-import glassWine from '../../images/glassWine.svg';
+import glassWine from '@images/glassWine.svg';
+
 import cl from './Descriptions.module.scss';
 
 const Descriptions = () => {

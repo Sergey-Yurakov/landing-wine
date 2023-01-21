@@ -1,9 +1,9 @@
+import CardWine from '@components/CardWine/CardWine';
+import Input from '@components/UI/Input/Input';
+import Select from '@components/UI/Select/Select';
+import { useWine } from '@hooks/useWine';
 import { useState } from 'react';
 
-import CardWine from '../../components/CardWine/CardWine';
-import Input from '../../components/UI/Input/Input';
-import Select from '../../components/UI/Select/Select';
-import { useWine } from '../../hooks/useWine';
 import cl from './Catalog.module.scss';
 import { mock } from './mock';
 

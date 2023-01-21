@@ -1,7 +1,8 @@
-import rectangle11 from '../../images/Rectangle11.png';
-import rectangle12 from '../../images/Rectangle12.png';
-import rectangle13 from '../../images/Rectangle13.png';
-import Link from '../UI/Link/Link';
+import Link from '@components/UI/Link/Link';
+import rectangle11 from '@images/Rectangle11.png';
+import rectangle12 from '@images/Rectangle12.png';
+import rectangle13 from '@images/Rectangle13.png';
+
 import cl from './NewCollections.module.scss';
 
 const NewCollections = () => {

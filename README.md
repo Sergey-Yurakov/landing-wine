@@ -6,3 +6,5 @@ https://www.figma.com/file/14uMiycN37B1uIWpkDquPN/%D0%9D%D0%BE%D0%B2%D0%BE%D0%BA
 Затем yarn и yarn start.
 
 Бибилиотека craco используется для создания алиасов (коротких путей) для ипортов.
+
+Ссылка на деплой: https://landing-wine.netlify.app/
